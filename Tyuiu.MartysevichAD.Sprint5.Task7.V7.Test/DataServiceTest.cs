@@ -11,7 +11,7 @@ namespace Tyuiu.MartysevichAD.Sprint5.Task7.V7.Test
         [TestMethod]
         public void TestMethod1()
         {
-            string path = @"C:\DataSprint5\OutPutDataFileTask7V7.txt";
+            string path = $@"{Directory.GetCurrentDirectory()}\OutPutDataFileTask7V7.txt";
             FileInfo fileInfo = new FileInfo(path);
             bool fileExists = fileInfo.Exists;
             bool wait = true;
